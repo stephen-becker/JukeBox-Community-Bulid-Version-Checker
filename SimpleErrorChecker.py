@@ -1,6 +1,4 @@
 import sys
-InputValuesFalse = "Program's Basic Check Was Not Ran, Proceed With Caution - "
-InputValuesTrue = "Program's Basic Check Has Determined That It Is Safe To Proceed - "
 def checkInput(a, b, c, d, e):
   if not a > 0:
     ErrorCode = "File Exited, Error 115x0001 - Check SampleCount Value"
