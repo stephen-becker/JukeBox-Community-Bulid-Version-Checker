@@ -21,9 +21,9 @@ def checkInput(a, b, c, d, e):
   if e <= 0.1:
     ErrorCode = "File Exited, Error 117x0003 - Check SampleHops Values"
     sys.exit(ErrorCode)
-
-#checkInput()
-#print(InputValuesTrue + "Code 118x0001")
+  
+  print(InputValuesTrue + "Code 118x0001")
+  
 #
 #else:
 #  print(InputValuesFalse + "Code 118x0002")
