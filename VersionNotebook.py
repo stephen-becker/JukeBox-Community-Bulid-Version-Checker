@@ -12,7 +12,8 @@ def versionProcess(rVersion):
       print("You are running the latest version - Build", versionChecker)
   elif forceUpdate >= NotebookRange:
       ErrorCode = "File Exited, Error 114x0001 - File Too Outdated, Update Notebook"
-      sys.exit(ErrorCode)
+      SideNote = "**In order to bypass update checker if you choose, set BypassVersionUpdateChecker to True in the Mainframe section.**"
+      sys.exit(ErrorCode, SideNote)
   elif versionActual > versionChecker:
       ErrorCode = "File Exited, Error 114x0002 - Version Newer?"
       sys.exit(ErrorCode)
