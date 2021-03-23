@@ -18,10 +18,10 @@ def checkInput():
     ErrorCode = "File Exited, Error 117x0002 - Check SampleHops Values"
     sys.exit(ErrorCode)
 
-   if SampleHops[2] <= 0.1:
+  if SampleHops[2] <= 0.1:
     ErrorCode = "File Exited, Error 117x0003 - Check SampleHops Values"
     sys.exit(ErrorCode)
-      
+
 #checkInput()
 #print(InputValuesTrue + "Code 118x0001")
 #
