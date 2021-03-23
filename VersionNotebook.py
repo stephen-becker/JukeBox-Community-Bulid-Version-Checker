@@ -1,4 +1,4 @@
-LastestStableBuild = 15.025
+LastestStableBuild = 17.025
 NotebookRange = 2.0
 
 def versionProcess(rVersion):
