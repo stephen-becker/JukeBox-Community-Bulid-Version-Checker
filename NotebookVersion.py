@@ -7,7 +7,7 @@ def versionProcess(rVersion):
   forceUpdate = versionChecker - versionActual
     
   if versionActual == versionChecker:
-      print("You are running the latest version - Build",LatestStableBuild)
+      print("You are running the latest version - Build",versionChecker)
   elif forceUpdate >= NotebookRange:
       ErrorCode = "File Exited, Error 114x0001 - File Too Outdated, Update Notebook"
       sys.exit(ErrorCode)
