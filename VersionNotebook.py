@@ -1,6 +1,8 @@
 LastestStableBuild = 18.025
 NotebookRange = 2.0
 
+import sys
+
 def versionProcess(rVersion):
   versionActual = float(rVersion)
   versionChecker = LastestStableBuild
