@@ -5,7 +5,7 @@ NotebookRange = 2.0
 def versionProcess(rVersion):
   versionActual = float(rVersion)
   versionChecker = LastestStableBuild
-  forceUpdate = versionChecker - versionActual
+  forceUpdate = round(versionChecker - versionActual, 2)
     
   if versionActual == versionChecker:
       print("You are running the latest version - Build", versionChecker)
