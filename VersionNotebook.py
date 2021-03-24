@@ -1,5 +1,5 @@
 import sys
-LastestStableBuild = 15.03
+LastestStableBuild = 15.35
 NotebookRange = 2.0
 
 def versionProcess(rVersion):
