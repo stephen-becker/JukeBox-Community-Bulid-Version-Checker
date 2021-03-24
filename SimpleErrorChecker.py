@@ -27,3 +27,6 @@ def checkInput(ab, a, b, c, d, e):
 
 def setToFalse():
   print(InputValuesFalse + "Code 118x0002")
+
+def setToTrue():
+  print(InputValuesTrue + "Code 118x0001")
