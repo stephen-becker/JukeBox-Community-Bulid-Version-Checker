@@ -10,8 +10,7 @@ def preVersionProcess(rVersion):
   
   if versionActual == 1.337:
       print("You are running a developer build, good luck with the coding.")
-  
-  if versionActual == versionChecker:
+  elif versionActual == versionChecker:
       print("You are running the latest version - Build", versionChecker)
   elif forceUpdate >= NotebookRange:
       print("File Will Exit, Error 114x0001 - File Too Outdated, Update Notebook\n**In order to bypass update checker, if you choose, set BypassVersionUpdateChecker to True in the Mainframe section.**")
@@ -33,8 +32,7 @@ def versionProcess(rVersion):
   
   if versionActual == 1.337:
       print("You are running a developer build, good luck with the coding.")
-  
-  if versionActual == versionChecker:
+  elif versionActual == versionChecker:
       print("You are running the latest version - Build", versionChecker)
   elif forceUpdate >= NotebookRange:
       ErrorCode = "File Exited, Error 114x0001 - File Too Outdated, Update Notebook\n**In order to bypass update checker, if you choose, set BypassVersionUpdateChecker to True in the Mainframe section.**"
