@@ -7,7 +7,10 @@ def preVersionProcess(rVersion):
   versionChecker = LastestStableBuild
   forceUpdate = versionChecker - versionActual
   forceUpdate = float("{:.2f}".format(forceUpdate))
-    
+  
+  if versionActual == 1.337:
+      print("You are running a developer build, good luck with the coding.")
+  
   if versionActual == versionChecker:
       print("You are running the latest version - Build", versionChecker)
   elif forceUpdate >= NotebookRange:
@@ -27,7 +30,10 @@ def versionProcess(rVersion):
   versionChecker = LastestStableBuild
   forceUpdate = versionChecker - versionActual
   forceUpdate = float("{:.2f}".format(forceUpdate))
-    
+  
+  if versionActual == 1.337:
+      print("You are running a developer build, good luck with the coding.")
+  
   if versionActual == versionChecker:
       print("You are running the latest version - Build", versionChecker)
   elif forceUpdate >= NotebookRange:
