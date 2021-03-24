@@ -2,7 +2,7 @@ import sys
 InputValuesFalse = "Program's Basic Check Was Not Ran, Proceed With Caution - "
 InputValuesTrue = "Program's Basic Check Has Determined That It Is Safe To Proceed - "
 def checkInput(ab, a, b, c, d, e):
-  if ab == None:
+  if ab == ' ' or ab == '':
     ErrorCode = "File Exited, Error 115x0001 - Check Mode Value, Not Set?"
     sys.exit(ErrorCode)
   if not a > 0:
