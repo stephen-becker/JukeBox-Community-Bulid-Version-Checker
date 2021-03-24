@@ -13,14 +13,14 @@ def checkInput(ab, a, b, c, d, e):
     ErrorCode = "File Exited, Error 116x1001 - Check SampleLength Value?"
     sys.exit(ErrorCode)
 
-  if c <= .45:
+  if c < .50:
     ErrorCode = "File Exited, Error 117x0001 - Check SampleHops Values"
     sys.exit(ErrorCode)
 
-  if d <= .90:
+  if d < .50:
     ErrorCode = "File Exited, Error 117x0002 - Check SampleHops Values"
     sys.exit(ErrorCode)
 
-  if e <= 0.1:
+  if e < 0.0625:
     ErrorCode = "File Exited, Error 117x0003 - Check SampleHops Values"
     sys.exit(ErrorCode)
