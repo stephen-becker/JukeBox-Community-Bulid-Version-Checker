@@ -6,7 +6,7 @@ def versionProcess(rVersion):
   versionActual = float(rVersion)
   versionChecker = LastestStableBuild
   forceUpdate = versionChecker - versionActual
-  forceUpdate = "{:.2f}".format(forceUpdate)
+  forceUpdate = float("{:.2f}".format(forceUpdate))
     
   if versionActual == versionChecker:
       print("You are running the latest version - Build", versionChecker)
