@@ -8,7 +8,7 @@ def vBuildVersion(rVersion):
   versionActual = float(vMath)
   versionChecker = LatestVBuild
   forceUpdate = versionChecker - versionActual
-  forceUpdate = float("{:.5f}".format(forceUpdate))
+  #forceUpdate = float("{:.5f}".format(forceUpdate))
   
   if versionActual == 1.337:
       print("You are running a developer build, good luck with the coding.")
