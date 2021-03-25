@@ -16,10 +16,10 @@ def vBuildVersion(rVersion):
       print("You are running the latest experimental version - Build", versionChecker)
   elif forceUpdate >= NotebookRange:
       print("File Will Exit, Error 114x0001 - File Too Outdated, Update Notebook\n**In order to bypass update checker, if you choose, set BypassVersionUpdateChecker to True in the Mainframe section.**")
-  elif versionActual > versionChecker:
+  elif versionActual >= versionChecker:
       ErrorCode = "File Exited, Error 114x0002 - Version Newer?"
       sys.exit(ErrorCode)
-  elif versionActual < versionChecker:
+  elif versionActual <= versionChecker:
       print("You are running an outdated version of this notebook!")
       print("Running behind", forceUpdate, "version(s). Update soon!")
   else:
