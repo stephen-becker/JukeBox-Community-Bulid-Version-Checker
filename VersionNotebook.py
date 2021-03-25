@@ -4,7 +4,7 @@ LatestVBuild = 127.02
 NotebookRange = 2.0
 
 def vBuildVersion(rVersion):
-  vMath = (LatestVBuild - 1.0) * 1000
+  vMath = (rVersion - 1.0) * 1000
   versionActual = float(vMath)
   versionChecker = LatestVBuild
   forceUpdate = versionChecker - versionActual
