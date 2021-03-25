@@ -1,6 +1,6 @@
 import sys
 LastestStableBuild = 15.35
-LatestVBuild = 1.12702
+LatestVBuild = 127.02
 NotebookRange = 2.0
 
 def vBuildVersion(rVersion):
