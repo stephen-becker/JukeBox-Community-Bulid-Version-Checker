@@ -4,7 +4,7 @@ LatestVBuild = 127.02
 NotebookRange = 2.0
 
 class colors:
-  GREEN = '\033(32m'
+  TGREEN = '\033(32m'
   ENDC = '\033[m' # reset to the defaults
 
 def vBuildVersion(rVersion):
