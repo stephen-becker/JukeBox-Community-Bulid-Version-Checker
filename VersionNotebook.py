@@ -3,9 +3,7 @@ LatestStableBuild = 15.42
 LatestVBuild = 127.02
 NotebookRange = 2.0
 
-class colors:
-  TGREEN = '\033(32m'
-  ENDC = '\033[m' # reset to the defaults
+from colorama import Fore, Back, Style
 
 def vBuildVersion(rVersion):
   vMath = (rVersion - 1.0) * 1000
@@ -45,7 +43,8 @@ def preVersionProcess(rVersion):
       sys.exit(ErrorCode)
   elif versionActual < versionChecker:
       print("You are running an outdated version of this notebook!")
-      print(TGREEN + "Running behind", forceUpdate, "version(s). Update soon!", ENDC)
+      print(Fore.RED + "Running behind", forceUpdate, "version(s). Update soon!")
+      print(Style.RESET_ALL)
   else:
       ErrorCode = "File Exited, Failed To Check For Update"
       sys.exit(ErrorCode)
