@@ -1,5 +1,5 @@
 import sys
-LastestStableBuild = 15.35
+LatestStableBuild = 15.42
 LatestVBuild = 127.02
 NotebookRange = 2.0
 
@@ -29,7 +29,7 @@ def vBuildVersion(rVersion):
 
 def preVersionProcess(rVersion):
   versionActual = float(rVersion)
-  versionChecker = LastestStableBuild
+  versionChecker = LatestStableBuild
   forceUpdate = versionChecker - versionActual
   forceUpdate = float("{:.2f}".format(forceUpdate))
   
@@ -51,7 +51,7 @@ def preVersionProcess(rVersion):
 
 def versionProcess(rVersion):
   versionActual = float(rVersion)
-  versionChecker = LastestStableBuild
+  versionChecker = LatestStableBuild
   forceUpdate = versionChecker - versionActual
   forceUpdate = float("{:.2f}".format(forceUpdate))
   
