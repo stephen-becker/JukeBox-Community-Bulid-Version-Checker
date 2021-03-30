@@ -28,6 +28,8 @@ def vBuildVersion(rVersion):
   
 
 def preVersionProcess(rVersion):
+  pip install termcolor
+  from termcolor import colored
   versionActual = float(rVersion)
   versionChecker = LatestStableBuild
   forceUpdate = versionChecker - versionActual
@@ -38,7 +40,7 @@ def preVersionProcess(rVersion):
   elif versionActual == versionChecker:
       print("You are running the latest version - Build", versionChecker)
   elif forceUpdate >= NotebookRange:
-      print("File Will Exit, Error 114x0001 - File Too Outdated, Update Notebook\n**In order to bypass update checker, if you choose, set BypassVersionUpdateChecker to True in the Mainframe section.**")
+      print(color('File Will Exit, Error 114x0001 - File Too Outdated, Update Notebook\n**In order to bypass update checker, if you choose, set BypassVersionUpdateChecker to True in the Mainframe section.**', 'red'))
   elif versionActual > versionChecker:
       ErrorCode = "File Exited, Error 114x0002 - Version Newer?"
       sys.exit(ErrorCode)
