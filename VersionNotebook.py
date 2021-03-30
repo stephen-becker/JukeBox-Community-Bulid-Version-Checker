@@ -3,7 +3,7 @@ LatestStableBuild = 15.42
 LatestVBuild = 127.02
 NotebookRange = 2.0
 
-!pip install colorama
+pip install colorama
 from colorama import Fore, Style
 
 def vBuildVersion(rVersion):
