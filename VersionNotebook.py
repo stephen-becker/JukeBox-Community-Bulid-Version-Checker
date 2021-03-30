@@ -3,9 +3,6 @@ LatestStableBuild = 15.42
 LatestVBuild = 127.02
 NotebookRange = 2.0
 
-pip install colorama
-from colorama import Fore, Style
-
 def vBuildVersion(rVersion):
   vMath = (rVersion - 1.0) * 1000
   versionActual = round(vMath, 3)
@@ -19,6 +16,9 @@ def vBuildVersion(rVersion):
       print("You are running the latest experimental version - Build", versionChecker)
   elif forceUpdate >= NotebookRange:
       print("File Will Exit, Error 114x0001 - File Too Outdated, Update Notebook\n**In order to bypass update checker, if you choose, set BypassVersionUpdateChecker to True in the Mainframe section.**")
+  elif versionActual > versionChecker:
+      ErrorCode = "File Exited, Error 114x0002 - Version Newer?"
+      sys.exit(ErrorCode)
   elif versionActual < versionChecker:
       print("You are running an outdated version of this notebook!")
       print("Running behind", forceUpdate, "version(s). Update soon!")
@@ -44,8 +44,7 @@ def preVersionProcess(rVersion):
       sys.exit(ErrorCode)
   elif versionActual < versionChecker:
       print("You are running an outdated version of this notebook!")
-      print(Fore.RED + "Running behind", forceUpdate, "version(s). Update soon!")
-      print(Style.RESET_ALL)
+      print("Running behind", forceUpdate, "version(s). Update soon!")
   else:
       ErrorCode = "File Exited, Failed To Check For Update"
       sys.exit(ErrorCode)
