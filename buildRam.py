@@ -16,7 +16,7 @@ def initalStageCommit(typePrint):
 def versionChecker(vv):
   recentBuild = 9.09
   currentUse = vv
-  needsUpdate = false
+  needsUpdate = False
   goodVersion = colored('Build '+recentBuild, 'green')
   
   if currentUse == recentBuild:
