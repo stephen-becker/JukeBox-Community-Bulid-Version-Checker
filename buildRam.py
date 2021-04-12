@@ -1,10 +1,17 @@
 import sys
 from termcolor import colored, cprint
 
-def initalStageCommit(void):
-  gpuText = colored('Assigned GPU:', 'red')
-  driveText = colored('\nGoogle Drive Connector:', 'red')
-  updateText = colored('\nChecking For Updates:', 'red')
+def initalStageCommit(textCaller):
+  
+  if textCaller == gpuTxt:
+    gpuText = colored('Assigned GPU:', 'red')
+    print(gpuText)
+  elif textCaller == driveTxt:
+    driveText = colored('\nGoogle Drive Connector:', 'red')
+    print(driveText)
+  elif textCaller == updateTxt:
+    updateText = colored('\nChecking For Updates:', 'red')
+    print(updateText)
   
 def versionChecker(vv):
   recentBuild = 9.09
