@@ -1,15 +1,15 @@
 import sys
 from termcolor import colored, cprint
 
-def initalStageCommit(textCaller):
+def initalStageCommit(typePrint):
   
-  if textCaller == gpuTxt:
+  if typePrint == gpuTxt:
     gpuText = colored('Assigned GPU:', 'red')
     print(gpuText)
-  elif textCaller == driveTxt:
+  elif typePrint == driveTxt:
     driveText = colored('\nGoogle Drive Connector:', 'red')
     print(driveText)
-  elif textCaller == updateTxt:
+  elif typePrint == updateTxt:
     updateText = colored('\nChecking For Updates:', 'red')
     print(updateText)
   
