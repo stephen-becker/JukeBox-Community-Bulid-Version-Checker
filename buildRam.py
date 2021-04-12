@@ -22,3 +22,7 @@ def versionChecker(vv):
   
   if currentUse == recentBuild:
     print("You're running the latest version of this build.", goodVersion)
+    needsUpdate = True
+  else:
+    exitTxt = colored('You're running an outdated version of this build.', 'red')
+    sys.exit(badVersion)
