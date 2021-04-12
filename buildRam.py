@@ -18,7 +18,7 @@ def versionChecker(vv):
   currentUse = vv
   convertedNum = recentBuild
   needsUpdate = False
-  goodVersion = colored('Build '+ str(convertedNum), 'green')
+  goodVersion = colored('Build 9.09', 'green')
   
   if currentUse == recentBuild:
     print("You're running the latest version of this build. ", goodVersion)
