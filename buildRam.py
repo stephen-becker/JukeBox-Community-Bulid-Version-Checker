@@ -25,4 +25,4 @@ def versionChecker(vv):
     needsUpdate = True
   else:
     exitTxt = colored('You\'re running an outdated version of this build.', 'red')
-    sys.exit(badVersion)
+    sys.exit(exitTxt)
